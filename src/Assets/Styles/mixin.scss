@@ -1,0 +1,174 @@
+
+
+@mixin Hero_header($color) {
+    color: $color;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.05em;
+}
+@mixin About_Hero_Header($color){
+    color: $color;
+    font-size: 60px;
+    font-weight: bold; 
+}
+@mixin About_Header($color) {
+    color: $color;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+@mixin About_Card_Header($color) {
+    color: $color;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+@mixin About_Text($color) {
+    color: $color;
+    font-size: 24px;
+    line-height: 1.6em;
+}
+@mixin Hero_mobile_header {
+    font-size: 3.8rem;
+    font-weight:light!important;
+    line-height: 1.05em;
+}
+@mixin Hero_subheader($color) {
+    color: $color;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.05em;
+}
+@mixin Header($color) {
+    color: $color;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+@mixin Header_text($color) {
+    color: $color;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+@mixin Header_subtext($color) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+@mixin Card_header($color) {
+    color: $color;
+    font-size: 22px;
+    font-weight: 700;
+}
+@mixin Card_text($color){
+    color: $color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+@mixin Card_link($color){
+    color: $color;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 26px;
+}
+@mixin Card_title($color) {
+    color: $color;
+    font-size: 15px;
+    font-weight: 700;
+}
+@mixin Card_subtitle($color) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 400;
+}
+@mixin card_img {
+    width: 40px;
+    height: 40px;
+}
+@mixin Card_icon {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+@mixin Button_fill($bgcolor,$color){
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    fill: $color;
+    color: $color;
+    background-color: $bgcolor;
+    border-style: none;
+    border-radius: 3px;
+    border-color:$bgcolor;
+    transition: all .15s ease;
+    padding:8px 20px;
+}
+@mixin Button_outline($bgcolor){
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 18.75px;
+    letter-spacing: 0.5px;
+    fill: $bgcolor;
+    color:$bgcolor;
+    background-color: transparent;
+    border-style: solid;
+    border-color:$bgcolor;
+    border-width:1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .15s ease;
+    padding:12px 30px;
+}
+@mixin Button_Hover($bgcolor,$color) {
+    color:$color;
+    background-color:$bgcolor;
+}
+@mixin Button_outline_Hover($bgcolor,$color) {
+    color:$color;
+    background-color:$bgcolor;
+}
+
+@mixin Checkbox_text($color) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33em;
+}
+@mixin footer_header($color){
+    color: $color;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;  
+}
+@mixin Navbar($color){
+    color: $color;
+    margin-right: 32px;
+    font-size: 16px;
+    line-height: 160%;
+}
+@mixin Price_Card_Top_Title($color){
+    color: $color;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1;
+}
+@mixin Price_Qoute_Text($color){
+    color: $color;
+    font-size: 26px;
+    line-height: 1.5em;
+}
+@mixin Qoute_Text($color){
+    color: $color;
+    font-size: 120px;
+    line-height: 1em;
+}

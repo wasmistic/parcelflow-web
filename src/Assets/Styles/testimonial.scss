@@ -1,0 +1,104 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+
+.Testimonial-fill{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10rem 3rem;
+    background-color: $section_b_container_color;
+    h6{
+        @include Header_subtext($header_subtext_icon_link_color);
+        margin: 0px;
+        font-family: 'DM Sans', sans-serif!important;
+    }
+    h2{
+        @include Header($header_color);
+        margin:1.5rem 0px;
+        margin-bottom: 5rem;
+    }
+    .Card_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0px;
+        .Card{
+            width: calc(100%/3.2);
+            height: 300px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #10101012;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            margin: 0px 12px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 2.5rem 0rem;
+            padding-right: 1.9rem;
+            padding-left: 2.5rem;
+            background-color: $white_color;
+            p{
+                @include Header_text($card_text_color);
+                margin: 0px;
+                font-family: 'DM Sans', sans-serif!important;
+                margin-bottom: 1.5rem;
+            }
+            .profile_details{
+                display: flex;
+                align-items:center;
+                flex-direction: row;
+                justify-content: flex-start;
+                img{
+                   @include card_img;
+                   margin-right: 1rem;
+                }
+                .details{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    h5{
+                        @include Card_title($card_title_subtitle_color);
+                        margin: 0px;
+                    }
+                    p{
+                      @include Card_subtitle($card_title_subtitle_color);
+                      margin: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .Testimonial-fill{
+        padding: 5rem 1rem;
+      
+        h2{
+            @include Header($header_color);
+            margin:1.5rem 0px;
+            margin-bottom: 5rem;
+        }
+        .Card_box{
+            flex-direction: column;
+            width: 100%;
+            justify-content:center;
+            overflow: hidden;
+            .Card{
+                width: 100%;
+                margin: 0px;
+                margin-bottom:3rem;
+                height: auto;
+                p{
+                    @include Header_text($card_text_color);
+                    margin: 0px;
+                    font-family: 'DM Sans', sans-serif!important;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }    
+}

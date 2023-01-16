@@ -1,0 +1,40 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+
+.Reach_Out_Section_Fill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0rem;
+    background-color: $reach_out_bg;
+    h3{
+        @include Header($header_color);
+        margin: 0px;
+    }
+    p{
+        @include Header_text($header_color);
+        margin: 0px;
+        font-family: 'DM Sans', sans-serif!important;
+        text-align: center;
+        margin:2.5rem 0px;
+    }
+}
+
+@media (max-width:768px){
+    .Reach_Out_Section_Fill{
+        padding: 6rem 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+        .btn-button{
+            margin: 0px;
+        }
+    }   
+}

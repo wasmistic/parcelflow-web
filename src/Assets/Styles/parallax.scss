@@ -1,0 +1,84 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+
+.Parallax-fill{
+    // height: 300px;
+    // overflow: hidden;
+.Parallax{
+    background-image: url("../Image/parallax_img.jpg");
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 130px 0px 130px 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    .blend_mode{
+        position:absolute;
+        top: 0px;
+        left: 0px;
+        background-color:$parallax_blend_mode_color;
+        opacity: 0.45;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        width: 100%;
+        height: 100%;
+    }
+    .Parallax_box{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        height: 450px;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        background-color: $white-color;
+        border-radius: 8px;
+        padding: 25px 32px;
+        box-sizing: border-box;
+        transform: translateY(-50%);
+        // margin-left: auto;
+        // margin-right: 100px;
+        h2{
+            @include Header($header_color);
+            margin:1.5rem 0px;
+        }
+        p{
+            @include Header_text($card_text_color);
+            margin: 0px;
+            font-family: 'DM Sans', sans-serif!important;
+            margin-bottom: 1.5rem
+        }
+        a{
+            @include Card_link($card_text_color);
+            border-bottom: 2px solid $card_text_color;
+            transition: all .3s ease-in-out;
+            font-family: 'DM Sans', sans-serif!important;
+        }
+      
+    }
+}
+}
+
+@media (max-width:768px){
+    .Parallax-fill{
+    .Parallax{
+        min-height: 350px;
+        width: 100%;
+        .Parallax_box{
+            width: 95%; 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            padding: 25px 22px;
+            height:auto;
+            h2{
+                @include Card_header($header_color);
+                margin:1.5rem 0px;
+            }
+          
+        }
+    }
+    }
+}

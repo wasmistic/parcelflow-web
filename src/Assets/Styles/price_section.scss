@@ -1,0 +1,1171 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.Price_Hero{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height:85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#edffff;
+    background-blend-mode:multiply;
+    box-sizing: border-box;
+    .Container{
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-inline: auto;
+        display: flex;
+        align-items:flex-start;
+        justify-content:center;
+        flex-direction: column;
+        h2{
+            @include Hero_header($hero_header_color);
+            font-weight:600;
+            margin: 0px;
+        }
+        p{
+            @include About_Text($about_subheader_text_color);
+            font-family: "DM Sans", sans-serif !important;
+            font-weight: normal;
+        }
+    }
+}
+.View_Price_Section{
+    overflow: hidden;
+    width: 100%;
+    padding: 8rem 0rem;
+    padding-bottom:2.5rem;
+    box-sizing: border-box;
+    .Container{
+        overflow: hidden;
+        width: 90%;
+        margin-inline: auto;
+        border-bottom:3px solid $banner_color;
+        padding-bottom:3rem;
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        box-sizing: border-box;
+        .Box{
+            box-sizing: border-box;
+            h3{
+                @include About_Card_Header($hero_header_color);
+                margin:0px;
+            }
+            p{
+                @include Header_text($about_subheader_text_color);
+                font-family: "DM Sans", sans-serif !important;
+                color: #74788d;
+                font-weight: normal;
+                margin:2rem 0rem;
+                margin-bottom:3rem;
+            }
+            .btn-button{
+                margin: 0px;
+            }
+        }
+        .Check_Box{
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 50%;
+            .Wrapper{
+                display: flex;
+                align-items:flex-start;
+                justify-content:flex-start;
+                width: calc(100%/2);
+                margin-bottom: 2rem;
+                box-sizing: border-box;
+                img{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    margin-right: 1.3rem
+                }
+                .Detail{
+                    h5{
+                        @include Header_text($about_subheader_text_color);
+                        font-weight: bold;
+                        font-family: "DM Sans", sans-serif !important;
+                        font-weight: normal;
+                        margin: 0px;
+                    }
+                    p{
+                      @include Card_text($header_text_color);
+                      font-family: "DM Sans", sans-serif !important;
+                      font-weight: normal;
+                      line-height: 1.68;
+                    }
+                }
+            }
+        }
+    }
+}
+.Plan_Section{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 8rem;
+    padding-top:4rem;
+    box-sizing: border-box;
+    .Container{
+        width: 90%;
+        margin-inline:auto;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        h3{
+            @include Header($about_subheader_text_color);
+            font-family: "DM Sans", sans-serif !important;
+            font-weight: normal !important;
+            margin-top: 0px;
+        }
+        .header_plan_text{
+            font-family: "Prompt", sans-serif !important;;
+        }
+        .Card_Box{
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .Card{
+                width: calc(100%/2);
+                height: 635px;
+                border-radius: 10px;
+                border-style: solid;
+                border-width:1px;
+                border-color: rgba(0,0,0,0.15);
+                box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 5%);
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                margin: 0px 10px;
+                padding: 50px 30px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                position: relative;
+                .Top{
+                    border-bottom: 2px solid $banner_color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-bottom:2rem;
+                    margin-bottom:0.5rem;
+                    width: 100%;
+                    h4{
+                      @include Price_Card_Top_Title($about_subheader_text_color);
+                      font-family: "DM Sans", sans-serif !important;
+                      margin: 0px;
+                    }
+                    h2{
+                        @include Header($header_subtext_icon_link_color);
+                        font-family: "DM Sans", sans-serif !important;
+                        font-weight: 700;
+                        margin: 0px;
+                        margin-top: 1.5rem;
+                        margin-bottom:.4rem;
+                    }
+                    h5{
+                        font-family: "DM Sans", sans-serif !important;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $reach_out_bg;
+                        margin: 0px;
+                    }
+                }
+                h3{
+                    @include Checkbox_text($about_subheader_text_color);
+                    color: #74788d;
+                    font-weight: normal !important;
+                    line-height: 1.9;
+                    margin-bottom: 3rem;
+                    font-size: 15px;
+                    span{
+                        color: rgba(57,57,57,0.29);
+                    }
+                }
+                .btn-button{
+                    margin: 0px;
+                    width: 80%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.Oriented{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Img_Box{
+        width:50%;
+        background-image: url("../Image/oriented.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-color:$img_bg_color;
+        height:550px;
+        box-sizing: border-box;
+    }
+    .Box{
+        background-color: #FEF9F6;
+        width: 50%;
+         box-sizing: border-box;
+         height:550px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        .Box_Detail{
+            h4{
+                @include Header_subtext($header_subtext_icon_link_color);
+                font-family: "DM Sans", sans-serif !important;
+                font-weight: normal;
+                margin:0px;
+            }
+            h3{
+                @include About_Card_Header($hero_header_color);
+                font-family: "Prompt", sans-serif !important;
+                margin:1.1rem 0px;
+            }
+            p{
+                @include Header_text($about_subheader_text_color);
+                color: #74788d;
+                font-family: "DM Sans", sans-serif !important;
+                font-weight: normal;
+                margin: 0px;
+                margin-bottom:3.1rem;
+            }
+            .btn-button{
+                margin: 0px;
+            }
+        }
+    }
+}
+.Card_List{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 4rem 5rem;
+   .Container{
+    width: 95%;
+    margin-inline:auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    h2{
+        @include Header($about_subheader_text_color);
+        font-weight:700;
+        // margin-left: 1.5rem;
+    }
+    .Card_Box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .Card{
+            box-shadow: 0px 0px 40px 10px rgb(0 0 0 / 5%);
+            margin: 0px 20px;
+            margin-bottom:3rem;
+            padding: 50px 40px;
+            width: calc(100%/3.4);
+            box-sizing: border-box;
+            display: flex;
+            align-items:flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            border-style: solid;
+            border-width: 2px 2px 2px 2px;
+            border-color: rgba(16, 16, 16, 0.0705882353);
+            border-radius: 10px;
+            img{
+                @include card_img;
+            }
+            h4{
+                @include Card_header($card_header_color);
+                font-family: "DM Sans", sans-serif !important;
+                margin:1rem 0px;
+            }
+            p{
+                @include Card_text($card_text_color);
+                font-family: "DM Sans", sans-serif !important;
+                font-weight: normal;
+                margin: 0px;
+            }
+            .icon{
+                font-size: 40px;
+                color: #16A085;
+            }
+        }
+    }
+   }
+}
+.Comment_Card{
+    width: 100%;
+    box-sizing: border-box;
+    .Container{
+        width: 90%;
+        margin-inline:auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .Detail_Box{
+            width: 95%;
+            margin-inline:auto;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 10%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom:6rem;
+            .Box{
+                padding:80px;
+                h1{
+                    @include Qoute_Text($header_subtext_icon_link_color);
+                    margin: 0px;
+                    font-family: 'Noto Serif Georgian', serif;
+                }
+                p{
+                    @include About_Text($about_subheader_text_color);
+                    font-family: "DM Sans", sans-serif !important;
+                    font-weight: normal;
+                    line-height: 1.3em;
+                    margin: 0px;
+                }
+                .Content{
+                    margin: 0px;
+                    margin-top:2.5rem;
+                    h4{
+                        @include Card_header($about_subheader_text_color);
+                        font-family: "DM Sans", sans-serif !important;
+                        margin: 0px;
+                        margin-bottom: .5rem;
+                    }
+                    h5{
+                        @include Card_link($header_top_subtext_color);
+                        font-family: "DM Sans", sans-serif !important;
+                        font-weight: normal;
+                        margin: 0px;
+                    }
+                }
+            }
+            .Img_Box{
+                width:50%;
+                background-image: url("../Image/price_jane.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-color:$img_bg_color;
+                height:550px;
+                box-sizing: border-box; 
+            }
+            .Img_Box_male{
+                width:50%;
+                background-image: url("../Image/price_img2.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-color:$img_bg_color;
+                height:550px;
+                box-sizing: border-box; 
+            }
+        }
+
+    }
+}
+.Slider_Section{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 6rem 0rem;
+    background-color: $banner_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:8rem;
+    h3{
+        @include Card_header($about_subheader_text_color);
+        font-family: 'Noto Sans Georgian', sans-serif;
+        font-weight: bolder;
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
+    .swiper{
+        padding:3.5rem 0rem;
+        width: 90%;
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+              .Slider_Img_Container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width:85%;
+                margin-inline:auto;
+              }
+            }
+          }
+         .swiper-pagination{
+            bottom: 0px;
+         }
+         .swiper-button-next, .swiper-button-prev{
+            color: #000;
+            height: 20px!important;
+            width: 20px!important;
+            top: 55%;
+         }
+    }
+      
+}
+.Slider_mobile_Section{
+    display: none!important;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 6rem 0rem;
+    background-color: $banner_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:8rem;
+    h3{
+        @include Card_header($about_subheader_text_color);
+        font-family: 'Noto Sans Georgian', sans-serif;
+        font-weight: bolder;
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
+    .swiper{
+        padding:3.5rem 0rem;
+        width: 90%;
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+              .Slider_Img_Container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width:85%;
+                margin-inline:auto;
+              }
+            }
+          }
+         .swiper-pagination{
+            bottom: 0px;
+         }
+         .swiper-button-next, .swiper-button-prev{
+            color: #000;
+            height: 20px!important;
+            width: 20px!important;
+            top: 55%;
+         }
+    }
+      
+}
+.Tab_fill{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-bottom:2px solid $img_bg_color;
+    overflow: hidden;
+    // margin-bottom:3.5rem;
+    .Box{
+        border:2px solid $img_bg_color;
+        text-transform: capitalize;
+        border-bottom: none;
+        padding:.9rem 1.5rem;
+        box-sizing: border-box;
+        width:280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1px;
+        cursor: pointer;
+        @include Card_text($checkbox_text_color);
+        &:nth-of-type(2){
+            border-left: 0px;
+            border-right: 0px;
+            &.active{
+                border:2px solid $about_subheader_text_color;
+                border-bottom: none;
+            }
+        }
+    }
+    .active{
+        border-color: $about_subheader_text_color;
+    }
+}
+.Price_Select_field{
+    width: 95%;
+    margin-inline: auto;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid $img_bg_color;
+    box-sizing: border-box;
+    padding:.5rem 1.5rem;
+    @include Card_text($checkbox_text_color);
+    text-transform: capitalize;
+    font-weight: 700;
+    display: none;
+}
+.More_Business{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-inline: auto;
+    background-color: $banner_color;
+    padding:2.5rem 0rem;
+    h4{
+        @include Card_text($footer_header_color);
+        text-align: center;
+        font-weight: 700;
+        margin:30px 0px;
+    }
+    .Card_Content{
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .Card{
+            width: calc(100%/3.1);
+            height:71rem;
+            box-sizing: border-box;
+            padding: 2rem 1rem;
+            position: relative;
+            border-top:4px solid;
+            border-radius: 5px;
+            background-color: $white_color;
+            margin-bottom:3rem;
+            &:nth-of-type(1){
+                border-color: $price_gold;
+            }
+            &:nth-of-type(2){
+                border-color: $price_error;
+            }
+            &:nth-of-type(3){
+                border-color: $price_blue;
+            }
+           h4{
+            text-align: left;
+            @include Card_title($footer_header_color);
+            margin:1rem 0rem;
+           }
+            img{
+                width: 60px;
+                height: 60px;
+            }
+            h3{ 
+                @include About_Card_Header($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin:20px 0px;
+            }
+            p{
+                @include Header_text($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin: 0px;
+                font-weight:100 !important;
+                margin-bottom:2rem;
+            }
+            a{
+                @include Card_title($footer_header_color);
+                text-decoration:underline;
+                font-family: 'DM Sans', sans-serif!important;
+                font-weight:100 !important;
+            }
+            .btn-button{
+                display: block;
+                text-align: center;
+                margin: 0px;
+                margin-bottom:1rem;
+            }
+            hr{
+                margin:2rem 0rem;
+            }
+            ul{
+                margin: 0px;
+                padding:0px;
+                padding-left:12px;
+                margin-bottom: 1.5rem;
+                li{
+                    position: relative;
+                    @include Header_text($footer_header_color);
+                    font-family: 'DM Sans', sans-serif!important;
+                    margin-bottom: 1rem;
+                    &::before{
+                        content: "";
+                        width:6px;
+                        height:6px;
+                        border-radius: 100%;
+                        background-color:$parallax_blend_mode_color;
+                        position: absolute;
+                        top: 9px;
+                        left:-12px;
+                    }
+                }
+            }
+            .Btn_Box{
+                position: absolute;
+                bottom: 1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                a{
+                    text-decoration: none;
+                    @include Card_title($footer_header_color);
+                    font-weight: bolder!important;
+                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 15px;
+                        height: 12px;
+                        margin-left:5px;  
+                    }
+                }
+            }
+        }
+    }
+}
+.Bottom_Clog{
+    width: 90%;
+    box-sizing: border-box;
+    padding:2rem 3rem;
+    background-color: $white_color;
+    border-radius: 5px;
+    margin-inline: auto;
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 85%;
+        margin-inline: auto;
+        .Box{
+            width: 60%;
+            box-sizing: border-box;
+            .Top{
+                width: 55%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border-bottom:1px dotted $card_title_subtitle_color;
+                img{
+                    width: 45px;
+                    height: 47px;
+                    margin-right:30px;
+                }
+            }
+            p{
+                @include Header_text($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin:25px 0px;
+                font-weight:100 !important;
+            }
+            a{
+                @include Card_title($footer_header_color);
+                font-weight:600!important;
+                text-transform: capitalize;
+                transition:text-decoration .2s ease-in;
+                font-family: 'DM Sans', sans-serif!important;
+                img{
+                    margin-left: 5px;
+                    transition:margin-left .2s ease-in-out;
+                } 
+                &:hover{
+                    text-decoration: underline;
+                    img{
+                        margin-left: 8px;
+                    }
+                }  
+            }
+            &:nth-of-type(2){
+                background-image: url("../Image/price_csa.webp");
+                width: 257px;
+                height:168px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+.Small_Business{
+    background-color: $banner_color;
+    box-sizing: border-box;
+    padding: 3rem;
+    width: 100%;
+    overflow:hidden;
+    .Price_Container{
+        width: 80%;
+        margin-inline: auto;
+        background-color: $white_color;
+        border-radius: 5px;
+        box-sizing: border-box;
+        .Top{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            padding:2rem 1.5rem;
+            margin-bottom:1rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid $img_bg_color;
+           .btn{
+            @include Button_fill($header_subtext_icon_link_color,$footer_header_color);
+            cursor: pointer;
+            font-family: "DM Sans", sans-serif !important;
+            font-weight:500;
+            text-transform: capitalize;
+          &:hover{
+            background-color: #45B39D;
+            border-style: none;
+            line-height: 20px;
+            }
+            img{
+                margin-left:5px;
+            }
+           }
+           .Box{
+            width: 60%;
+            h3{ 
+                @include About_Card_Header($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin:10px 0px;
+            }
+            p,small{
+                @include Header_text($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin: 0px;
+                font-weight:100 !important;
+            }
+            small{
+                display: block;
+                margin:1.5rem 0rem;
+                span{
+                    font-weight: bold;
+                    &.span_block{
+                        display: block;
+                        font-weight: 200;
+                        @include Card_subtitle($footer_header_color);
+                    }
+                }
+            }
+            a{
+                @include Card_title($footer_header_color);
+                text-decoration:underline;
+                font-family: 'DM Sans', sans-serif!important;
+                font-weight:100 !important;   
+            }
+            img{
+                width: 60px;
+                height: 60px;
+            }
+           }
+        }
+        .Bottom{
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-around;
+         position: relative;
+         box-sizing: border-box;
+         width: 100%;
+         padding:0rem 1.5rem;
+         margin-inline: auto;
+         padding-bottom:5rem;
+         h4{
+            text-align: left;
+            @include Card_title($footer_header_color);
+            margin:1rem 0rem;
+           }
+           ul{
+            list-style: disc;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 1rem;
+            @include Header_text($footer_header_color);
+            font-family: 'DM Sans', sans-serif!important;
+            margin-bottom: 1rem;
+           }
+         .Box{
+            width: calc(95%/2);
+            
+         }
+         .btn_box{
+            position: absolute;
+            bottom:2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            a{
+                @include Card_title($footer_header_color);
+                font-weight: bold!important;
+                font-family: 'DM Sans', sans-serif!important;
+                img{
+                    margin-left: 5px;
+                }
+            }
+         }
+        }
+    }
+    h4{
+        @include Card_header($footer_header_color);
+        font-family: 'DM Sans', sans-serif!important;
+        text-align: center;
+        font-weight: 200;
+    }
+    .Banner_Card{
+        width: 80%;
+        margin-inline: auto;
+        background-color: $white_color;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        padding:0rem;
+        margin-bottom:2rem;
+        P{
+            @include Card_text($footer_header_color);
+            font-family: 'DM Sans', sans-serif!important;
+            font-weight:100 !important; 
+        }
+        .Left{
+            border-right:1px solid $img_bg_color;
+            box-sizing: border-box;
+            padding:2rem;
+            margin-right:3.5rem;
+            .btn-button{
+                margin: 0px;
+            }
+           .Top{
+            display: flex;
+            align-items:center;
+            justify-content: flex-start;
+            margin-bottom:2.5rem;
+            img{
+                width: 47px;
+                height: 48px;
+                margin-right: 10px;
+            }
+            h4{
+                @include Card_title($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important; 
+            }
+           }
+        }
+        .Right{
+            box-sizing: border-box;
+            padding-top:2rem;
+            ul{
+                list-style: disc;
+                margin: 0px;
+                padding: 0px;
+                padding-left: 1rem;
+                @include Header_text($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                margin-bottom: 1rem;
+               }
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .Price_Hero{
+        height:65vh;
+        .Container{
+            width: 90%;
+            padding-top:4rem;
+        }
+    }
+    .View_Price_Section{
+        padding:6rem 0rem;
+        padding-bottom:0rem;
+        .Container{
+            border-bottom:3px solid $banner_color;
+            padding-bottom:2rem;
+            flex-direction: column;
+            .Check_Box{
+                margin-top:6rem;
+                width: 100%;
+                .Wrapper{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .Plan_Section{
+        padding-bottom: 3rem;
+        .Container{
+            .Card_Box{
+                align-items:center;
+                justify-content: center;
+                flex-direction: column;
+                .Card{
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .Oriented{
+        flex-direction: column;
+        justify-content: center;
+        .Img_Box{
+            width:100%;
+            height:350px;
+        }
+        .Box{
+            width:100%;
+            .Box_Detail{
+                width: 80%;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .Card_List{
+        padding: 4rem 0rem;
+       .Container{
+        .Card_Box{
+            flex-direction: column;
+            justify-content: flex-start;
+            .Card{
+                width: 100%;
+                margin: 0px;
+            }
+        }
+       }
+    }
+    .Comment_Card{
+        .Container{
+            width: 90%;
+            margin-inline:auto;
+            box-sizing: border-box;
+            .Detail_Box{
+               flex-direction: column;
+                margin-bottom: 3rem;
+                &:nth-of-type(2){
+                    flex-direction: column-reverse;
+                }
+                .Box{
+                    padding:20px;
+                }
+                .Img_Box{
+                    width:100%;
+                    height:350px;
+                    margin-top: 2rem; 
+                }
+                .Img_Box_male{
+                    width:100%;
+                    height:350px;
+                }
+            }
+    
+        }
+    }
+    .Slider_Section{
+      display: none;   
+    }
+    .Slider_mobile_Section{
+        width: 100%;
+        padding: 6rem 0rem;
+        margin-bottom:8rem;
+        display:block!important;
+        .swiper{
+            padding:3.5rem 0rem;
+            width: 90%;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                  .Slider_Img_Container{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:85%;
+                    margin-inline:auto;
+
+                  }
+                }
+              }
+             .swiper-pagination{
+                bottom: 0px;
+             }
+             .swiper-button-next, .swiper-button-prev{
+                color: #000;
+                height: 20px!important;
+                width: 20px!important;
+                top: 60%;
+             }
+        }
+          
+    }
+    .Tab_fill{
+        width: 95%;
+        margin-inline: auto;
+        .Box{
+            width: 100%;
+            padding:.9rem;
+            @include Card_subtitle($checkbox_text_color);
+        }
+    }
+    .More_Business{
+        .Card_Content{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .Card{
+                width:70%;
+                margin-bottom:3rem;
+                padding-inline:2rem;
+            }
+        }
+    }
+    .Bottom_Clog{
+        width: 95%;
+        box-sizing: border-box;
+        padding:2rem 1.5rem;
+        .Container{
+          flex-direction:row;
+            width: 95%;
+            .Box{
+                width: 55%;
+            }
+        }
+    }
+    .Small_Business{
+        padding:3rem 0rem;
+        .Price_Container{
+            width:95%;
+        }
+        .Banner_Card{
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width:400px){
+    .Tab_fill{
+      display: none;
+    }
+    .Price_Select_field{
+        display: block;
+        margin:3rem auto;
+        margin-bottom: 0rem;
+    }
+    .More_Business{
+        .Card_Content{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .Card{
+                width:96%;
+                padding-inline:1.3rem;
+            }
+        }
+    }
+    .Bottom_Clog{
+        width: 95%;
+        box-sizing: border-box;
+        padding:2rem 1.5rem;
+        .Container{
+          flex-direction:row;
+            width: 95%;
+            .Box{
+                width: 100%;
+                .Top{
+                    width: 100%;
+                }
+                &:nth-of-type(2){
+                    display: none;
+                }
+            }
+
+        }
+    }
+    .Small_Business{
+        padding:3rem 0rem;
+        .Price_Container{
+            width:95%;
+            .Top{
+                flex-direction: column;
+               .btn{
+                margin-top: 2rem;
+               }
+               .Box{
+                width: 100%;
+               }
+            }
+            .Bottom{
+             flex-direction: column;
+             align-items: flex-start;
+             .Box{
+                width:100%;  
+             }
+             .btn_box{
+                position: absolute;
+                bottom:2rem;
+                left: 10%;
+                transform: translateX(-10%);
+             }
+            }
+        }
+        .Banner_Card{
+            width: 95%;
+            flex-direction: column;
+            P{
+                @include Card_text($footer_header_color);
+                font-family: 'DM Sans', sans-serif!important;
+                font-weight:100 !important; 
+            }
+            .Left{
+                border-right:transparent;
+                border-bottom: 1px solid $img_bg_color;
+                padding:2rem;
+                margin-right:0rem;
+                .btn-button{
+                    margin: 0px;
+                }
+               .Top{
+                margin-bottom:1.5rem;
+               }
+            }
+            .Right{
+                padding:2rem;
+            }
+        }
+    }
+}

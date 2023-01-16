@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="beafa2e8-74a6-4e67-9220-adbc3023fd93" data-name="Layer 1" viewBox="0 0 63.87842 63.87842">
+  <defs>
+    <clipPath id="7afa8dd4-4e9e-4b44-91f2-02373afc08d0">
+      <circle cx="33.02253" cy="32.09553" r="27" fill="none"/>
+    </clipPath>
+  </defs>
+  <title>Contact Support</title>
+  <circle cx="33.02253" cy="32.10587" r="27" fill="#dcf6ff"/>
+  <g clip-path="url(#7afa8dd4-4e9e-4b44-91f2-02373afc08d0)">
+    <rect x="-12.53648" y="12.32895" width="31.45432" height="3.67862" fill="#fff"/>
+    <rect x="-12.53648" y="26.63667" width="31.45432" height="3.67862" fill="#fff"/>
+    <rect x="-12.53648" y="19.48281" width="31.45432" height="3.67862" fill="#fff"/>
+    <rect x="18.91784" y="12.32895" width="28.26424" height="17.98634" fill="#fff"/>
+    <polygon points="36 19.426 47.182 30.315 47.182 12.329 36 19.426" fill="#011b33"/>
+    <polygon points="18.918 12.329 18.918 30.315 47.182 30.315 18.918 12.329" fill="#fff"/>
+    <path d="M18.91783,30.31527,32.16828,17.37443a1.21758,1.21758,0,0,1,1.69942-.002L47.18209,30.31527Z" fill="#00e1ff"/>
+    <polygon points="18.918 12.329 47.182 12.329 33.017 24.452 18.918 12.329" fill="#fff"/>
+    <rect x="18.91782" y="12.32898" width="28.26428" height="17.98633" rx="1.14606" ry="1.14606" fill="none"/>
+    <rect x="1.6373" y="34.27201" width="34.40408" height="3.67862" fill="#fff"/>
+    <rect x="1.6373" y="48.57973" width="34.40408" height="3.67862" fill="#fff"/>
+    <rect x="1.6373" y="41.42587" width="34.40408" height="3.67862" fill="#fff"/>
+  </g>
+  <rect x="31.93921" y="34.27198" width="28.26424" height="17.98634" fill="#fff"/>
+  <polygon points="49.021 41.369 60.203 52.258 60.203 34.272 49.021 41.369" fill="#011b33"/>
+  <polygon points="31.939 34.272 31.939 52.258 60.203 52.258 31.939 34.272" fill="#fff"/>
+  <path d="M31.9392,52.25831,45.18965,39.31747a1.21758,1.21758,0,0,1,1.69942-.002L60.20346,52.25831Z" fill="#00e1ff"/>
+  <polygon points="31.939 34.272 60.203 34.272 46.038 46.395 31.939 34.272" fill="#fff"/>
+  <rect x="31.93919" y="34.27201" width="28.26428" height="17.98633" rx="1.14606" ry="1.14606" fill="none"/>
+</svg>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
+body{
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+a{
+    color: #008561;
+    font-family: "DM Sans", sans-serif !important;
+    text-decoration: none;
+
+    //&:hover{
+    //    color: #45B39D;
+    //    text-decoration: underline;
+    //}
+}
+ul{
+    list-style: none;
+}

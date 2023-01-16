@@ -1,0 +1,142 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.Offer_fill{
+    box-sizing: border-box;
+    background-color: #edffff;
+    // opacity: 0.35;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    width: 100%;
+    overflow: hidden;
+    padding: 10rem 1rem;
+    margin-top: 6rem;
+    .Container{
+        width: 100%;
+        margin:0px auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .top{
+            width: 50%;
+            margin:0px auto;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h6{
+                @include Header_subtext($header_color);
+                margin: 0px;
+                font-family: 'DM Sans', sans-serif!important;
+            }
+            h2{
+                @include Header($header_color);
+                margin:1.5rem 0px;
+                text-align: center;
+             }
+             p{
+                @include Header_text($card_text_color);
+                margin: 0px;
+                font-family: 'DM Sans', sans-serif!important;
+                margin-bottom: 1.5rem;
+                text-align: center;
+             }
+        }
+        .card_box{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+            width: 98%;
+            // border: 2px solid red;
+            .card{
+                width: 40%;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #10101012;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                margin: 0px 12px;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 2.5rem 0rem;
+                padding-right: 1.9rem;
+                padding-left: 2.5rem;
+                background-color: $white_color;
+                margin:.6rem;
+                h4{
+                    @include Card_header($card_header_color);
+                    margin: 0px;
+                    margin-top: 1.3rem;
+                    font-family: 'DM Sans', sans-serif!important;
+                }
+                p{
+                    @include Card_text($card_text_color);
+                    margin:1.3rem 0px;
+                    font-family: "DM Sans", sans-serif !important;
+                    font-weight: normal;
+                }
+                a{
+                    @include Card_link($header_subtext_icon_link_color);
+                    border-bottom: 2px solid $header_subtext_icon_link_color;
+                    transition: all .3s ease-in-out;
+                    font-family: 'DM Sans', sans-serif!important;
+                    &:hover{
+                        color: $header_color;
+                        border-color: $header_color;
+                    }
+                }
+                img{
+                    width:54px;
+                    height:54px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .Offer_fill{
+        padding:4rem 0rem;
+        margin-top: 6rem;
+        .Container{
+            width: 98%;
+            .top{
+                align-items: flex-start;
+                width: 95%;
+                padding:0px 0.7rem;
+                h6{
+                   text-align: left;
+                }
+                h2{
+                   text-align: left;
+                 }
+                 p{
+                    
+                    text-align: left;
+                 }
+            }
+            .card_box{
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 4rem;
+                width:100%;
+                // border: 2px solid red;
+                .card{
+                    width: 100%;
+                   margin-bottom: 2rem;
+                    img{
+                        width:54px;
+                        height:54px;
+                    }
+                }
+            }
+        }
+    }
+}

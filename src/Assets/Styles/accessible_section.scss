@@ -1,0 +1,69 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.accessible_fill{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    .Container{
+        width: 90%;
+        margin-inline: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .box{
+            box-sizing: border-box;
+         img{
+            border-radius: 10px 800px 10px 10px;
+            width:508px;
+         }
+         h6{
+            @include Header_subtext($header_subtext_icon_link_color);
+            margin: 0px;
+            font-family: 'DM Sans', sans-serif!important;
+         }
+         h2{
+            @include Header($header_color);
+            margin:1.5rem 0px;
+         }
+         p{
+            @include Header_text($card_text_color);
+            margin: 0px;
+            font-family: 'DM Sans', sans-serif!important;
+            margin-bottom: 1.5rem
+         }
+         a{
+            @include Card_link($header_subtext_icon_link_color);
+            border-bottom: 2px solid $header_subtext_icon_link_color;
+            transition: all .3s ease-in-out;
+            font-family: 'DM Sans', sans-serif!important;
+            &:hover{
+                color: $header_color;
+                border-color: $header_color;
+            }
+         }
+
+        }
+    }
+}
+
+@media (max-width:768px){
+    .accessible_fill{
+        padding-top:10rem;
+        .Container{
+          flex-direction:column-reverse;
+          justify-content: center;
+            .box{
+             width: 100%;
+             margin-top: 0px;
+             img{
+                width:100%;
+                margin-top:5rem;
+             }
+    
+            }
+        }
+    }    
+}
