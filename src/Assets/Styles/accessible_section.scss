@@ -6,7 +6,8 @@
     overflow: hidden;
     width: 100%;
     .Container{
-        width: 90%;
+         max-width: 144px;
+         min-width: 95%;
         margin-inline: auto;
         box-sizing: border-box;
         overflow: hidden;
@@ -16,7 +17,7 @@
         .box{
             box-sizing: border-box;
          img{
-            border-radius: 10px 800px 10px 10px;
+            // border-radius: 10px 800px 10px 10px;
             width:508px;
          }
          h6{

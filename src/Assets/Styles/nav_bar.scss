@@ -22,6 +22,8 @@
         background-color: $white_color;
     }
     .Appbar{
+        max-width: 144px;
+        min-width: 95%;
         transition: background-color .2s ease;
         padding-left: 3rem;
         padding-right: 3rem;
@@ -94,7 +96,8 @@
         height: 0px;
     }
     .Container{
-        width: 80%;
+        max-width: 144px;
+        min-width: 95%;
         overflow: hidden;
         margin-inline: auto;
         display: flex;
@@ -147,7 +150,8 @@
         height: 0px;
     }
     .Container{
-        width: 80%;
+        max-width: 144px;
+        min-width: 95%;
         height: 100%;
         overflow: hidden;
         margin-inline: auto;
@@ -232,7 +236,8 @@
         height: 0px;
     }
     .Container{
-        width: 80%;
+        max-width: 144px;
+        min-width: 95%;
         height: 100%;
         overflow: hidden;
         margin-inline: auto;
@@ -317,7 +322,8 @@
         height: 0px;
     }
     .Container{
-        width: 80%;
+        max-width: 144px;
+        min-width: 95%;
         height: 100%;
         overflow: hidden;
         margin-inline: auto;

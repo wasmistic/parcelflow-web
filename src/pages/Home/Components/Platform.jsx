@@ -39,9 +39,11 @@ const PlatformSection = () => {
                 </div>
              </div>
              <div className="image_gallery_box">
-                <img src={top_img} alt="avater" />
+                <div className="Left_img">
                 <img src={left_img} alt="avater" />
                 <img src={bottom_img} alt="avater" />
+                </div>
+                <img src={top_img} alt="avater" />
              </div>
             </div>
         </div>

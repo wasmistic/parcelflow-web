@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../../Assets/Styles/hero.scss";
 import Btn from "../../../Components/Button"
-import img from "../../../Assets/Image/hero_img.webp";
+import img from "../../../Assets/Parcelflow images/img1.jpg";
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";

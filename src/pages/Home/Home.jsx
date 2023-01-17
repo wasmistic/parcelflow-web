@@ -4,7 +4,7 @@ import SectionB from "./Components/Section_B";
 import PlatformSection from "./Components/Platform";
 import AccessibleSection from "./Components/accessible_section";
 import OfferSection from "./Components/Offer_section";
-import Parallax from "./Components/Parallax_section";
+// import Parallax from "./Components/Parallax_section";
 import Testimonial from "./Components/Testimonial";
 import ReachOutSection from "./Components/Reach_out_section";
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
             <PlatformSection/>
             <AccessibleSection/>
             <OfferSection/>
-            <Parallax/>
+            {/* <Parallax/> */}
             <Testimonial/>
             <ReachOutSection/>
         </Fragment>

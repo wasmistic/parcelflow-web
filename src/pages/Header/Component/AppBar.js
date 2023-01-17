@@ -143,9 +143,6 @@ export default function ButtonAppBar() {
                     <ul>
                         <li className='top_title'>Segments</li>
                         <li>
-                            <NavLink onClick={closeMenu} to="/contact-us">Contact Us</NavLink>
-                        </li>
-                        <li>
                             <NavLink onClick={closeMenu} to="/conference">Business Operators</NavLink>
                         </li>
                         <li>
@@ -209,6 +206,7 @@ export default function ButtonAppBar() {
                             <li><NavLink onClick={closeMenu} to="/blogs">Blogs & Podcasts</NavLink></li>
                             <li><NavLink onClick={closeMenu} to="/help-center">Help Center</NavLink></li>
                             <li><NavLink onClick={closeMenu} to="/developer-hub">Developer Hub</NavLink></li>
+                            <li><NavLink onClick={closeMenu} to="/contact-us">Contact Us</NavLink></li>
                             {/*<li><NavLink onClick={closeMenu} to="/community-center">Community Center</NavLink></li>*/}
                         </ul>
                     </div>
