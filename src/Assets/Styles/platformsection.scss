@@ -8,9 +8,8 @@
     background-color: $white_color;
     box-sizing: border-box;
     .Container{
-        max-width: 144px;
-        min-width: 100%;
-        // margin-inline: auto;
+        width: 95%;
+        margin-inline: auto;
         .box{
             // width: 45%;
             display: flex;
@@ -132,10 +131,7 @@
 }
 @media (max-width:400px){
     .Platform-Container-fill{
-        padding-inline: .7rem!important;
         .Container{
-            align-items: center;
-            margin-inline: auto;
             .image_gallery_box{
                 width: 100%;
                 height: auto;
@@ -149,6 +145,7 @@
                     width: 100%;
                     align-items: center;
                     margin-top: 2rem;
+
                     img{
                         width: 100%;
                         height: 300px;

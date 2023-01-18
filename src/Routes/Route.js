@@ -21,6 +21,8 @@ import HelpCenterPage from "../pages/HelpCenter/index"
 import CommunityCenterPage from "../pages/CommunityCenter"
 import DeveloperHubPage from "../pages/Developer_Hub/index"
 import ContactUsPage from "../pages/Contact_Us/index"
+import PrivacyPolicyPage from "../pages/PrivacyPolicy";
+import TermsServicePage from "../pages/TermsService";
 
 
 const Routers = () => {
@@ -29,6 +31,8 @@ const Routers = () => {
             <Route exact path="/" element={<HomePage/>}/>
             <Route exact path="/about" element={<AboutPage/>}/>
             <Route exact path="/pricing" element={<PricePage/>}/>
+            <Route exact path="/privacy-policy" element={<PrivacyPolicyPage/>}/>
+            <Route exact path="/terms-service" element={<TermsServicePage/>}/>
             <Route exact path="/blogs" element={<BlogsPage/>}/>
             <Route exact path="/blog/:id" element={<DynamicBlogPage/>}/>
             <Route exact path="/community" element={<CommunityPage/>}/>

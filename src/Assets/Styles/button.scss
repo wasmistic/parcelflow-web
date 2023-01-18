@@ -17,12 +17,13 @@
 }
 
 .btn-ouline{
-  @include Button_outline($header_subtext_icon_link_color);
+  @include Button_outline($white_color);
   font-family: "DM Sans", sans-serif !important;
   font-weight: normal;
-  cursor: pointer;
   &:hover{
-    @include Button_outline_Hover($header_subtext_icon_link_color,$white_color)
+    background-color: #45B39D;
+    border-style: none;
+    line-height: 20px;
   }
 }
 

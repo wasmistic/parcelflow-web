@@ -11,6 +11,7 @@ import img3 from "../../../Assets/Image/working.webp"
 import close from "../../../Assets/Svg/close.svg"
 import chevron_left from "../../../Assets/Svg/chevron_left.svg"
 import chevron_right from "../../../Assets/Svg/chevron_right.svg"
+import { Link } from 'react-router-dom';
 
 
 export default function ButtonAppBar() {
@@ -116,7 +117,7 @@ export default function ButtonAppBar() {
                         </ul>
                     </div>
                     <div className='toolbar-right-content'>
-                        <Btn name="GET STARTED"/>
+                        <Link to="/"><Btn name="GET STARTED"/></Link>
                         <img onClick={handle} className='img img_hamburger' alt='search' src={hamburger}/>
                     </div>
                 </div>

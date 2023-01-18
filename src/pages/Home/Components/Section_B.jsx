@@ -2,8 +2,7 @@ import "../../../Assets/Styles/home_section_b.scss";
 import clickwise from "../../../Assets/Image/clockwise.svg";
 import mixer from "../../../Assets/Image/mixer.svg";
 import money from "../../../Assets/Image/money_icon.svg";
-// import {Link} from "react-router-dom"
-import Button from "../../../Components/Button"
+import {Link} from "react-router-dom"
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
@@ -25,22 +24,19 @@ const Section_B = () => {
                 <img src={clickwise} alt="img" />
                 <h4>Timely Delivery</h4>
                 <p>Process delivery requests with system automated features that makes the process fast and easy!</p>
-                  {/* <Link to="#">Learn more</Link> */}
-                  <Button name="Learn more" />
+                <Link to="#">Learn more</Link>
             </span>
             <span className="card">
                 <img src={mixer} alt="img" />
                 <h4>Smart Automation</h4>
                 <p>Almost everything is automated. thereby saving you time and stress.</p>
-                 {/* <Link to="#">Learn more</Link> */}
-                 <Button name="Learn more" />
+                <Link to="#">Learn more</Link>
             </span>
             <span className="card">
                 <img src={money} alt="img" />
                 <h4>Local & International Shipment</h4>
                 <p>Parcel flow makes it easy to handle both local and international daily deliveries.</p>
-                 {/* <Link to="#">Learn more</Link> */}
-                 <Button name="Learn more" />
+                <Link to="#">Learn more</Link>
             </span>
          </div>
         </div>

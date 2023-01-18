@@ -1,10 +1,9 @@
 import "../../../Assets/Styles/about_hero.scss"
-import Button from "../../../Components/Button.js"
 import AOS from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import Btn from "../../../Components/Button.js";
-
+import { Link } from "react-router-dom";
 
 const BandSection = () => {
     useEffect(() => {
@@ -16,7 +15,7 @@ const BandSection = () => {
         <div className="Band-fill">
             <h3>Let's help you stand out  with your Logistics!</h3>
             <p>Contact Us.</p>
-            <Btn name="contact us"/>
+           <Link to="/contact-us"><Btn name="contact us"/></Link>
         </div>
     );
 }

@@ -32,20 +32,21 @@ const ContactUsFormSection = () => {
                             <label htmlFor="PhoneNumber">Phone Number (Optional)</label>
                             <input placeholder="09121215900" type="tel" id="PhoneNumber"/>
                         </div>
-                        <div className="Box">
+                        {/* <div className="Box">
                             <label htmlFor="CompanyName">Company Name</label>
                             <input placeholder="company-site.com" type="text" id="CompanyName"/>
-                        </div>
+                        </div> */}
                         <div className="Box">
-                            <label htmlFor="CompanySize">Company Size</label>
-                           <select name="" id="CompanySize">
-                            <option value="1">1-9 employees</option>
-                            <option value="2">10-99 employees</option>
-                            <option value="3">100-999 employees</option>
-                            <option value="4">1000+ employees</option>
+                            <label htmlFor=" Department"> Department</label>
+                           <select name="" id="Department">
+                            <option selected>Select Department</option>
+                            <option value="1">General</option>
+                            <option value="2">Sales</option>
+                            <option value="3">Engineering</option>
+                            <option value="4">Others</option>
                            </select>
                         </div>
-                        <div className="Box">
+                        {/* <div className="Box">
                             <label htmlFor="pickOption">Which of these best describes your company's primary product?</label>
                             <small>Please select the closest option</small>
                             <select name="" id="pickOption">
@@ -54,8 +55,8 @@ const ContactUsFormSection = () => {
                             <option value="3">Physical goods (eg food, clothing)</option>
                             <option value="4">Services (eg education, healthcare, entertaiment)</option>
                            </select>
-                        </div>
-                        <div className="Box">
+                        </div> */}
+                        {/* <div className="Box">
                             <label htmlFor="Country">Country</label>
                            <select name="" id="Country">
                             <option value="1">TG Togo</option>
@@ -63,11 +64,12 @@ const ContactUsFormSection = () => {
                             <option value="3">SD Sudan</option>
                             <option value="4">NG Nigeria</option>
                            </select>
-                        </div>
+                        </div> */}
                         <div className="Box">
                             <label htmlFor="pickOption">Monthly Payment Volume</label>
                             <small>How much money your business processes online each month</small>
                             <select name="" id="pickOption">
+                            <option selected>Choose your Payment</option>
                             <option value="1">None-just getting started</option>
                             <option value="2">Less than USD 100K</option>
                             <option value="3">USD 100K TO 500K</option>
@@ -85,7 +87,7 @@ const ContactUsFormSection = () => {
                             <div className="Inner_Buttom_Box">
                                 <label htmlFor="checklabel">Send me occasional Parcelflow update and annoucements.
                                 <div className="link_box">
-                                <span>You can unsubscribe at anytime. Learn more about our</span><Link>Privacy and Policy</Link>
+                                <span>You can unsubscribe at anytime. Learn more about our</span><Link to="/privacy-policy">Privacy and Policy</Link>
                                 </div>
                                 </label>
                                 
@@ -118,7 +120,7 @@ const ContactUsFormSection = () => {
                 </div>
                 <div className="Box_two">
                     <h2>Trusted by over 80,000 businesses</h2>
-                    <p>Paystack is the partner of choice for many of Nigeria's market leaders, including MTN, Air Peace, and AXA Mansard</p>
+                    <p>Parcelflow is the partner of choice for many of Nigeria's market leaders, including MTN, Air Peace, and AXA Mansard</p>
                     <ul>
                         <li>
                             <img src={mark} alt="check" />

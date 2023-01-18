@@ -14,7 +14,8 @@ const AboutHeroSection = () => {
     return ( 
         <div className="Hero">
             <div data-aos="fade-up" className="Container">
-                <h1>About Parcelfow</h1>
+                <h2>About Parcelfow</h2>
+                <p>Whether you own a retail business or operate a courier business, <br/> Parcelflow has a plan to help you save time and make delivery easy.</p>
             </div>
         </div>
      );

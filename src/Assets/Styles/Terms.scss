@@ -1,0 +1,68 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+.Terms_Top{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color:#edffff;
+    .container{
+        width: 90%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-inline: auto;
+        display: flex;
+        align-items:flex-start;
+        justify-content:center;
+        flex-direction: column;
+        padding:4rem 0rem;
+        padding-top: 8rem;
+        h2{
+            @include Hero_header($hero_header_color);
+            font-weight:600;
+            margin: 0px;
+        }
+        p{
+            @include About_Text($about_subheader_text_color);
+            font-family: "DM Sans", sans-serif !important;
+            font-weight: normal;
+        }
+    }
+
+}
+
+.Body_Section{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    .container{
+        width: 90%;
+        margin-inline: auto;
+        height:100%;
+        box-sizing: border-box;
+        padding:3rem 0rem;
+        h3{
+            @include Price_Card_Top_Title($about_subheader_text_color);
+            font-family: "DM Sans", sans-serif !important;
+            margin: 0px;
+            margin-top:4.5rem
+        }
+        p{
+            @include About_Text($about_subheader_text_color);
+            font-family: "DM Sans", sans-serif !important;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+        }
+        ol{
+            li{
+                @include About_Text($about_subheader_text_color);
+                font-family: "DM Sans", sans-serif !important;
+                font-weight: normal; 
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

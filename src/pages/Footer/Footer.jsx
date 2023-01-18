@@ -10,20 +10,20 @@ const FooterPage = () => {
           <div className="Container">
           <ul>
                 <li className="title">Products</li>
-                <li><Link>Logistics Businesses</Link></li>
-                <li><Link>E-commerce & Corporates</Link></li>
-                <li><Link>Restaurants & Kitchens</Link></li>
+                <li><Link to="/logistics-business-solutions">Logistics Businesses</Link></li>
+                <li><Link to="/ecommerce-business-solutions">E-commerce & Corporates</Link></li>
+                <li><Link to="/restaurant-business-solutions">Restaurants & Kitchens</Link></li>
             </ul>
             <ul>
                 <li className="title">Business Segments</li>
-                <li><Link>Business Operators</Link></li>
-                <li><Link>Service Operators</Link></li>
+                <li><Link to="/conference">Business Operators</Link></li>
+                <li><Link to="/resources">Service Operators</Link></li>
             </ul>
             <ul>
                 <li className="title">ParcelFlow</li>
-                <li><Link>About us</Link></li>
-                <li><Link>Blog</Link></li>
-                <li><Link>Help Center</Link></li>
+                <li><Link to="/about">About us</Link></li>
+                <li><Link to="/blogs">Blog</Link></li>
+                <li><Link to="/help-center">Help Center</Link></li>
             </ul>
             <ul>
                 <li className="title">Follow us</li>
@@ -36,32 +36,17 @@ const FooterPage = () => {
                 <li className="title">Contact us</li>
                 <li>018888866</li>
                 <li>015200061</li>
-                <li>info@parcelflow.io</li>
+                <li><a href="mailto:info@parcelflow.io">info@parcelflow.io</a></li>
             </ul>
-            {/* <ul>
-                <li className="title">LINKS</li>
-                <li>
-                    <Link to="#">About Us</Link>
-                </li>
-                <li>
-                    <Link to="#">Careers - We're Hiring!</Link>
-                </li>
-                <li>
-                    <Link to="#">Pricing</Link>
-                </li>
-                <li>
-                    <Link to="#">Contact Us</Link>
-                </li>
-            </ul> */}
           </div>
           <div className="logo_box">
           <img src={Logo} alt="logo" />
           <ul>
                 <li>
-                    <Link>Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                    <Link>Terms of Service</Link>
+                    <Link to="/terms-service">Terms of Service</Link>
                 </li>
             </ul>
           </div>

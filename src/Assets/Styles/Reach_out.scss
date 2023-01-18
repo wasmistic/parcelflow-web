@@ -12,6 +12,7 @@
     h3{
         @include Header($header_color);
         margin: 0px;
+        text-align: center
     }
     p{
         @include Header_text($header_color);
@@ -25,14 +26,14 @@
 @media (max-width:768px){
     .Reach_Out_Section_Fill{
         padding: 6rem 2rem;
-        justify-content: flex-start;
-        align-items: flex-start;
-        h3{
-            text-align: left;
-        }
-        p{
-            text-align: left;
-        }
+        justify-content:center;
+        align-items: center;
+        // h3{
+        //     text-align: left;
+        // }
+        // p{
+        //     text-align: left;
+        // }
         .btn-button{
             margin: 0px;
         }

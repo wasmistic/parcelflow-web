@@ -112,22 +112,20 @@
     padding:8px 20px;
 }
 @mixin Button_outline($bgcolor){
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 18.75px;
+    line-height: 20px;
+    color: $white_color;
     letter-spacing: 0.5px;
-    fill: $bgcolor;
-    color:$bgcolor;
-    background-color: transparent;
-    border-style: solid;
-    border-color:$bgcolor;
     border-width:1px;
-    border-radius: 25px;
-    cursor: pointer;
+    border-style:solid;
+    border-radius: 3px;
+    border-color:$bgcolor;
     transition: all .15s ease;
-    padding:12px 30px;
+    padding:8px 20px;
+    cursor: pointer;
 }
 @mixin Button_Hover($bgcolor,$color) {
     color:$color;

@@ -2,7 +2,7 @@ const ContactUsTopPage = () => {
     return (
         <div className="Contact_Top">
             <div className="container">
-                <h2>Contact Sales</h2>
+                <h2>Contact Parcelflow</h2>
                 <p>We look forward to working with you to meet your growth goals!</p>
             </div>
         </div>
